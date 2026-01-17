@@ -11,3 +11,20 @@ Things I learnt/did today:
     * second half of the day
 
     + CLI warm ups
+
+
+
+    # EC2 SSH Hardening Lab
+
+## Steps Performed
+1. Launched Ubuntu 22.04 EC2 (t2.micro)
+2. Created SSH key pair locally
+3. Connected via SSH using key-based authentication
+4. Disabled password authentication
+5. Disabled root login
+6. Verified SSH access using public key only
+
+## Security Reasoning
+- Password authentication disabled to prevent brute force attacks
+- Root login disabled to reduce attack surface
+- SSH access restricted by Security Group to my IP only
